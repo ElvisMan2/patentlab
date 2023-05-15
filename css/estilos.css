@@ -59,8 +59,16 @@ nav a:hover {color: #F5A800;}
 .seccion2 div p {padding-right: 30px;padding-left: 30px; padding-bottom: 30px; text-align: justify;}
 
 
-.seccion2 figure {max-width: 648px;}
-.seccion2 img {width: 100%;height: auto;}
+.seccion2 figure {
+	max-width: 648px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.seccion2 img {
+	width: 100%;
+	height: auto;
+
+}
 
 .seccion2 article div a {display: flex;justify-content:center; flex-direction: row;margin-bottom: 20px; text-decoration: none; color: white; margin-left: auto;margin-right: auto;}
 .seccion2 article div a figure{margin-right: 15px;}
