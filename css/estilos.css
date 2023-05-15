@@ -44,13 +44,20 @@ nav a:hover {color: #F5A800;}
 .footer figure{padding-top: 30px; margin-left: 20Px;height: 100px;}
 .footer {color:white;}
 
-.seccion2 { display: flex; justify-content: space-around;}
-.seccion2 article {background-color: #2273C2; padding: 30px;display:flex; align-items: center ;flex-wrap: wrap;width: 46%;}
+.seccion2 { 
+	display: flex;
+	justify-content: space-around; 
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.seccion2 article {background-color: #014E6D; padding: 30px;display:flex; align-items: center ;flex-wrap: wrap;width: 46%;}
 .seccion2 article p {color: white; text-align: justify; width: 100%;}
 .seccion2 article div {width: 100%;}
 .seccion2 h3 {text-align: center;padding: 20px;color: #2273C2; width: 100%;}
 .seccion2 div p {padding-right: 30px;padding-left: 30px; padding-bottom: 30px; text-align: justify;}
-.seccion2 div {width: 54%;}
+
 
 .seccion2 figure {max-width: 648px;}
 .seccion2 img {width: 100%;height: auto;}
