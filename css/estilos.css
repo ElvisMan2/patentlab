@@ -51,6 +51,7 @@ nav ul{list-style:none;
 .nuestros-servicios p{
 	max-width: 800px;
 	margin: 25px auto 0 auto;
+	font-size: 0.9em !important;
 }
 
 .card{
