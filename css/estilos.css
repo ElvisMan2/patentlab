@@ -48,6 +48,11 @@ nav ul{list-style:none;
 	font-weight: bold;
 }
 
+.nuestros-servicios p{
+	max-width: 800px;
+	margin: 25px auto 0 auto;
+}
+
 .card{
     padding: 20px;
     margin-bottom: 20px;
