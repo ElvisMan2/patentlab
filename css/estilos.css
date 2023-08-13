@@ -126,8 +126,8 @@ nav li hover{background-color: gray}
 }
 
 
-.footer {display: flex;justify-content:left;align-items: center; background-image: url(../images/footer.jpg); height: 100px; margin-top: 20px;}
-.footer div{padding-top: 60px;}
+.footer {display: flex;justify-content:left;align-items: center; background-image: url(../images/footer.jpg); margin-top: 20px;}
+.footer div{padding-top: 20px;}
 .footer figure{padding-top: 30px; margin-left: 20Px;height: 100px;}
 .footer {color:white;}
 
