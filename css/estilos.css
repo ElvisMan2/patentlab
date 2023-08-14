@@ -1,160 +1,255 @@
-@charset "UTF-8";
 /* CSS Document Programa Patenta */
 
+@charset "UTF-8";
+
+/* Fuentes personalizadas */
 @font-face {
-	font-family: roboto;
-	src: url(../fonts/Roboto-Regular.ttf);
+    font-family: roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
 }
 
-*{margin: 0; 
-	padding: 0; 
-	box-sizing: border-box;
-	font-family: roboto;
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
 }
 
+/* Contenedor principal */
 #contenedor {
-	max-width: 1200px;
-	margin: auto;
+    max-width: 1200px;
+    margin: auto;
 }
 
-header {display: flex;justify-content: space-between; flex-direction: row;padding-top: 20px; padding-bottom: 20px;}
-
-nav ul{list-style:none;
-	display: flex; justify-content: space-around; margin-top: 10px; 
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.navbar-collapse{
-	display: flex;
-	justify-content: space-between;
-	font-size: 1.2em;
-	font-family: roboto !important;
-	font-weight: bold;
+/* Navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    flex-wrap: wrap;
 }
 
-.nav-item img{
-	width: 140px;
-	height: auto;
+/* Barra de navegación colapsada */
+.navbar-collapse {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+    font-family: roboto !important;
+    font-weight: bold;
 }
 
-.nuestros-servicios{
-	margin-bottom: 40px;
-	margin-top: 40px;
-	text-align: center;
-	font-size: 1.2em !important;
+/* Elementos de la barra de navegación */
+.nav-item img {
+    width: 140px;
+    height: auto;
 }
 
-.nuestros-servicios h1{
-	font-size: 1.2em !important;
-	font-weight: bold;
+/* Sección "Nuestros Servicios" */
+.nuestros-servicios {
+    margin-bottom: 40px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 1.2em !important;
 }
 
-.nuestros-servicios p{
-	max-width: 800px;
-	margin: 25px auto 0 auto;
-	font-size: 0.9em !important;
+.nuestros-servicios h1 {
+    font-size: 1.2em !important;
+    font-weight: bold;
 }
 
-.card{
+.nuestros-servicios p {
+    max-width: 800px;
+    margin: 25px auto 0 auto;
+    font-size: 0.9em !important;
+}
+
+/* Tarjetas de servicios */
+.card {
     padding: 20px;
     margin-bottom: 20px;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);cursor:default; transition: all 400ms ease;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
 }
 
-.card:hover{box-shadow: 5px 5px 20px rgba(0,0,0,0.4); transform: translateY(-3%);}
+.card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
 
-.card i{
+.card i {
     font-size: 80px;
     color: #153D58;
     padding-bottom: 20px;
-    
 }
 
-.card a{
+.card a {
     text-decoration: none;
     color: #14352F;
 }
 
-header figure img {width: 275px;}
-nav ul {display: flex;justify-content:center; flex-wrap: wrap;flex-direction: column;}
+/* Encabezado de la figura en el encabezado */
+header figure img {
+    width: 275px;
+}
 
-nav li a {display: flex;justify-content:left; flex-direction: row;margin-bottom: 20px;}
-nav li a div {margin-left: 10px; padding-top: 4px;}
-nav li img {display:block;}
-nav li hover{background-color: gray}
+/* Estilos de la navegación en dispositivos pequeños */
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 
+nav li a {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
 
+nav li a div {
+    margin-left: 10px;
+    padding-top: 4px;
+}
 
-.banner img {width: 100%;}
+nav li img {
+    display: block;
+}
 
+nav li:hover {
+    background-color: gray;
+}
+
+/* Imagen del banner */
+.banner img {
+    width: 100%;
+}
+
+/* Imágenes en columnas */
 .col-lg-6 img {
-	width: 100%;
+    width: 100%;
 }
 
+/* Sección 1 */
 .seccion1 {
-	display: flex;
-	justify-content:space-around;
-	background-image: url(../images/fondo.png);
-	height: 225px;
-	padding-top: 40px; 
-	padding-bottom: 40px;
-	margin-bottom: 20px;
-	padding-left: 20px; 
-	padding-right: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-image: url(../images/fondo.png);
+    height: 225px;
+    padding: 40px;
+    margin-bottom: 20px;
 }
 
-.seccion1 section { 
-	display: flex; 
-	justify-content: space-around;
+.seccion1 section {
+    display: flex;
+    justify-content: space-around;
 }
+
 .seccion1 p {
-	color: white;
-	font-size: 1em;
-	font-family: roboto !important;
-	font-weight: bold;
+    color: white;
+    font-size: 1em;
+    font-family: roboto !important;
+    font-weight: bold;
 }
+
 .seccion1 h1 {
-	color: white;
-	font-size: 1.5em;
-	font-family: roboto !important;
-	font-weight: bold;
+    color: white;
+    font-size: 1.5em;
+    font-family: roboto !important;
+    font-weight: bold;
 }
+
 .seccion1 h2 {
-	color: #7ADBD4;
-	font-size: 1.5em;
-	font-family: roboto !important;
-	
+    color: #7ADBD4;
+    font-size: 1.5em;
+    font-family: roboto !important;
 }
 
-
-.footer {display: flex;justify-content:left;align-items: center; background-image: url(../images/footer.jpg); margin-top: 20px;}
-.footer div{padding-top: 20px;}
-.footer figure{padding-top: 30px; margin-left: 20Px;height: 100px;}
-.footer {color:white;}
-
-.seccion2 { 
-	display: flex;
-	justify-content: space-around; 
-	max-width: 1000px;
-	margin-left: auto;
-	margin-right: auto;
+/* Pie de página */
+.footer {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-image: url(../images/footer.jpg);
+    margin-top: 20px;
 }
 
-.seccion2 article {background-color: #014E6D; padding: 30px;display:flex; align-items: center ;flex-wrap: wrap;width: 46%;}
-.seccion2 article p {color: white; text-align: justify; width: 100%;}
-.seccion2 article div {width: 100%;}
-.seccion2 h3 {text-align: center;padding: 20px;color: #2273C2; width: 100%;}
-.seccion2 div p {padding-right: 30px;padding-left: 30px; padding-bottom: 30px; text-align: justify;}
+.footer div {
+    padding-top: 20px;
+}
 
+.footer figure {
+    padding-top: 30px;
+    margin-left: 20px;
+    height: 100px;
+}
+
+.footer {
+    color: white;
+}
+
+/* Sección 2 */
+.seccion2 {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.seccion2 article {
+    background-color: #014E6D;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 46%;
+}
+
+.seccion2 article p {
+    color: white;
+    text-align: justify;
+    width: 100%;
+}
+
+.seccion2 article div {
+    width: 100%;
+}
+
+.seccion2 h3 {
+    text-align: center;
+    padding: 20px;
+    color: #2273C2;
+    width: 100%;
+}
+
+.seccion2 div p {
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    text-align: justify;
+}
 
 .seccion2 figure {
-	max-width: 648px;
-	margin-left: auto;
-	margin-right: auto;
+    max-width: 648px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.nosotros{
-    
-	background-image: url(../images/pattern-bg.png);
+/* Sección "Nosotros" */
+.nosotros {
+    background-image: url(../images/pattern-bg.png);
     background-size: cover;
     color: white;
     padding: 60px 20px 60px 20px;
@@ -162,45 +257,96 @@ nav li hover{background-color: gray}
     margin-top: 30px;
 }
 
-.nosotros h1{
-	font-size: 1.5em;
-	font-weight: bold;
+.nosotros h1 {
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
-.proteger-invenciones h1{
-	font-size: 1.5em;
-	font-weight: bold;
+/* Sección "Proteger Invenciones" */
+.proteger-invenciones h1 {
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
+/* Imágenes de la Sección 2 */
 .seccion2 img {
-	width: 100%;
-	height: auto;
+    width: 100%;
+    height: auto;
 }
 
+/* Enlaces de Sección 2 */
+.seccion2 article div a {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.seccion2 article div a figure {
+    margin-right: 15px;
+}
 
-.seccion2 article div a {display: flex;justify-content:center; flex-direction: row;margin-bottom: 20px; text-decoration: none; color: white; margin-left: auto;margin-right: auto;}
-.seccion2 article div a figure{margin-right: 15px;}
+/* Media queries */
+@media screen and (max-width: 425px) {
+    /* Cuando la pantalla es máximo 425 pixeles */
+    .seccion1 {
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        padding: 30px;
+        margin-bottom: 15px;
+    }
+    .seccion1 p {
+        margin-bottom: 20px;
+    }
+}
 
-@media screen and (max-width:425px) /* cuando la pantalla es maximo 425 pixeles */ 
-{ 
-	.seccion1 {
-		height: 300px;
-		display: flex;
-		justify-content:center; 
-		flex-wrap: nowrap; 
-		flex-direction: column;
-		padding-top: 30px; 
-		padding-bottom: 20px;
-		margin-bottom: 15px;
-		padding-left: 15px; 
-		padding-right: 15px;}
-	.seccion1 p {margin-bottom: 20px;}
-} 
+@media screen and (max-width: 767px) {
+    /* Cuando la pantalla es máximo 767 pixeles */
+    .seccion2 {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .seccion2 article {
+        background-color: #2273C2;
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    .seccion2 div {
+        width: 100%;
+    }
+}
 
-@media screen and (max-width:767px) /* cuando la pantalla es maximo 480 pixeles */ 
-{ 
-	.seccion2 { display: flex; justify-content: space-around; flex-wrap: wrap; flex-direction: column;}
-	.seccion2 article {background-color: #2273C2; padding: 30px;display:flex; align-items: center;width: 100%;}
-	.seccion2 div {width: 100%;}
-} 
+.blog h2{
+	font-size: 1em;
+	font-weight:bold;
+}
+
+.blog h3{
+	font-size: 1em;
+}
+
+.blog p{
+	font-size: 0.9em;
+	text-align: justify;
+}
+
+.blog li{
+	font-size: 0.9em;
+	text-align: justify;
+}
+
+.blog img{
+	width: 100%;
+
+}
