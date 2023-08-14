@@ -127,9 +127,7 @@ nav li img {
     display: block;
 }
 
-nav li:hover {
-    background-color: gray;
-}
+
 
 /* Imagen del banner */
 .banner img {
